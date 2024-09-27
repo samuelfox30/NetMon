@@ -11,3 +11,4 @@ def processa_pacote(pacote):
 
 """ sniff(prn=processa_pacote, filter="ip", store=0) """
 sniff(prn=processa_pacote, filter="ip", store=0, iface="Wi-Fi")
+# test
