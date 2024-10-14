@@ -1,0 +1,8 @@
+.erro{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    height: 70px;
+    background-color: rgb(255, 100, 48);
+}
