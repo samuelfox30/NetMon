@@ -1,44 +1,67 @@
-# Importando a biblioteca Scapy
+# Importando as bibliotecas necessárias
 import scapy.all as scapy
+from dotenv import load_dotenv
+import os
+import requests  # Biblioteca para fazer requisições HTTP em Python
+import json  # Para converter os dados em JSON
 
-# Função em que os pacotes são processados para a exibição
+# Carregando as variáveis do arquivo .env
+load_dotenv()
+
+# Função em que os pacotes são processados para a exibição e envio
 def sniffed_packet(packet):
+    data = {}
+
     # Verifica se o pacote tem a camada Ethernet
     if packet.haslayer(scapy.Ether):
-        mac_origem = packet[scapy.Ether].src
-        mac_destino = packet[scapy.Ether].dst
-        print(f"MAC Origem: {mac_origem}, MAC Destino: {mac_destino}")
+        data['mac_origem'] = packet[scapy.Ether].src
+        data['mac_destino'] = packet[scapy.Ether].dst
 
     # Verifica se o pacote tem a camada IP
     if packet.haslayer(scapy.IP):
-        ip_versao = "IPv4"
-        ip_origem = packet[scapy.IP].src
-        ip_destino = packet[scapy.IP].dst
-        print(f"Versão IP: {ip_versao}, IP Origem: {ip_origem}, IP Destino: {ip_destino}")
+        data['ip_versao'] = "IPv4"
+        data['ip_origem'] = packet[scapy.IP].src
+        data['ip_destino'] = packet[scapy.IP].dst
     
     # Verifica se o pacote tem a camada IPv6
     elif packet.haslayer(scapy.IPv6):
-        ip_versao = "IPv6"
-        ip_origem = packet[scapy.IPv6].src
-        ip_destino = packet[scapy.IPv6].dst
-        print(f"Versão IP: {ip_versao}, IP Origem: {ip_origem}, IP Destino: {ip_destino}")
+        data['ip_versao'] = "IPv6"
+        data['ip_origem'] = packet[scapy.IPv6].src
+        data['ip_destino'] = packet[scapy.IPv6].dst
 
     # Verifica se o pacote tem a camada TCP
     if packet.haslayer(scapy.TCP):
-        porta_origem = packet[scapy.TCP].sport
-        porta_destino = packet[scapy.TCP].dport
-        print(f"Protocolo: TCP, Porta Origem: {porta_origem}, Porta Destino: {porta_destino}")
+        data['protocolo'] = "TCP"
+        data['porta_origem'] = packet[scapy.TCP].sport
+        data['porta_destino'] = packet[scapy.TCP].dport
 
     # Verifica se o pacote tem a camada UDP
     elif packet.haslayer(scapy.UDP):
-        porta_origem = packet[scapy.UDP].sport
-        porta_destino = packet[scapy.UDP].dport
-        print(f"Protocolo: UDP, Porta Origem: {porta_origem}, Porta Destino: {porta_destino}")
+        data['protocolo'] = "UDP"
+        data['porta_origem'] = packet[scapy.UDP].sport
+        data['porta_destino'] = packet[scapy.UDP].dport
 
     # Identificação do protocolo da camada de aplicação, caso exista
     if packet.haslayer(scapy.Raw):
-        protocolo_aplicacao = "Protocolo de Aplicação: Dados brutos"
-        print(protocolo_aplicacao)
+        data['protocolo_aplicacao'] = "Protocolo de Aplicação: Dados brutos"
+
+    # Obtendo a URL do endpoint e o ID do usuário a partir das variáveis de ambiente
+    endpoint_url = os.getenv("ENDPOINT_URL")
+    user_id = os.getenv("ID_USER")  # Obtém o ID do usuário
+
+    # Incluindo o ID do usuário nos dados
+    data['id_usuario'] = user_id
+
+    # Envia os dados para o endpoint PHP via POST
+    if endpoint_url:  # Verifica se a variável ENDPOINT_URL foi definida
+        try:
+            response = requests.post(endpoint_url, json=data)
+            print(f"Dados enviados: {data}")
+            print(f"Resposta do servidor: {response.json()}")
+        except Exception as e:
+            print(f"Erro ao enviar os dados: {e}")
+    else:
+        print("Erro: A variável ENDPOINT_URL não foi definida no arquivo .env.")
 
     print("\n" + "-"*50 + "\n")
 
@@ -53,7 +76,14 @@ def sniffer(interface):
 
 # Função principal
 def main():
-    sniffer("Wi-Fi")
+    # Pegando a interface de rede a partir do arquivo .env
+    interface = os.getenv("INTERFACE")
+    
+    if interface:
+        # Chama o sniffer com a interface definida no arquivo .env
+        sniffer(interface)
+    else:
+        print("Erro: A variável INTERFACE não foi definida no arquivo .env.")
 
 # Verificando se o arquivo está sendo executado ou importado
 if __name__ == '__main__':
