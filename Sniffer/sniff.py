@@ -43,7 +43,15 @@ def sniffed_packet(packet):
 
     # Identificação do protocolo da camada de aplicação, caso exista
     if packet.haslayer(scapy.Raw):
-        data['protocolo_aplicacao'] = "Protocolo de Aplicação: Dados brutos"
+        data['data_status'] = "Contém [Dados brutos]"
+        if data.get('porta_destino') == 80:
+            data['data_status'] = "Pacote HTTP"
+            try:
+                data['payload'] = packet[scapy.Raw].load.decode(errors='ignore')
+            except Exception as e:
+                data['payload'] = f"Error: {e}"
+    else:
+        data['data_status'] = "Não contém [Dados brutos]"
 
     # Obtendo a URL do endpoint e o ID do usuário a partir das variáveis de ambiente
     endpoint_url = os.getenv("ENDPOINT_URL")
