@@ -41,17 +41,29 @@ def sniffed_packet(packet):
         data['porta_origem'] = packet[scapy.UDP].sport
         data['porta_destino'] = packet[scapy.UDP].dport
 
+    if data.get('porta_destino') == 80:
+        data['data_status'] = "HTTP"
+    if data.get('porta_destino') == 443:
+        data['data_status'] = "HTTPS"
+    if data.get('porta_destino') == 21:
+        data['data_status'] = "FTP"
+    if data.get('porta_destino') == 25:
+        data['data_status'] = "SMTP"
+    if data.get('porta_destino') == 110:
+        data['data_status'] = "POP3"
+    if data.get('porta_destino') == 53:
+        data['data_status'] = "DNS"
+
     # Identificação do protocolo da camada de aplicação, caso exista
     if packet.haslayer(scapy.Raw):
-        data['data_status'] = "Contém [Dados brutos]"
-        if data.get('porta_destino') == 80:
-            data['data_status'] = "Pacote HTTP"
+        data['data_status'] = "Have"
+        if data.get('porta_destino') == 80 or data.get('porta_destino') == 25 or data.get('porta_destino') == 21:
             try:
                 data['payload'] = packet[scapy.Raw].load.decode(errors='ignore')
             except Exception as e:
                 data['payload'] = f"Error: {e}"
     else:
-        data['data_status'] = "Não contém [Dados brutos]"
+        data['data_status'] = "DontHave"
 
     # Obtendo a URL do endpoint e o ID do usuário a partir das variáveis de ambiente
     endpoint_url = os.getenv("ENDPOINT_URL")
