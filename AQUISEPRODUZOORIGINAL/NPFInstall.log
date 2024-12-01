@@ -1,0 +1,1302 @@
+﻿[000035F4] 2024-09-26 08:18:42 --> wmain
+[000035F4] 2024-09-26 08:18:42     _tmain: executing, argv[1] = -n.
+[000035F4] 2024-09-26 08:18:42     _tmain: executing, argv[2] = -check_dll.
+[000035F4] 2024-09-26 08:18:42 --> getInUseProcesses
+[000035F4] 2024-09-26 08:18:42 --> enumProcesses
+[000035F4] 2024-09-26 08:18:42 --> getNpcapPIDs
+[000035F4] 2024-09-26 08:18:42 <-- getNpcapPIDs
+[000035F4] 2024-09-26 08:18:42     enumDLLs::OpenProcess: error, errCode = 0x00000005, strProcessName = System, dwProcessID = 4.
+[000035F4] 2024-09-26 08:18:42     enumDLLs::OpenProcess: error, errCode = 0x00000005, strProcessName = Registry, dwProcessID = 80.
+[000035F4] 2024-09-26 08:18:42     enumDLLs::OpenProcess: error, errCode = 0x00000005, strProcessName = smss.exe, dwProcessID = 532.
+[000035F4] 2024-09-26 08:18:42     enumDLLs::OpenProcess: error, errCode = 0x00000005, strProcessName = csrss.exe, dwProcessID = 764.
+[000035F4] 2024-09-26 08:18:42     enumDLLs::OpenProcess: error, errCode = 0x00000005, strProcessName = wininit.exe, dwProcessID = 856.
+[000035F4] 2024-09-26 08:18:42     enumDLLs::OpenProcess: error, errCode = 0x00000005, strProcessName = csrss.exe, dwProcessID = 868.
+[000035F4] 2024-09-26 08:18:42     enumDLLs::OpenProcess: error, errCode = 0x00000005, strProcessName = services.exe, dwProcessID = 920.
+[000035F4] 2024-09-26 08:18:42     EnumProcessModulesEx: error, errCode = 0x00000005.
+[000035F4] 2024-09-26 08:18:42     enumDLLs::OpenProcess: error, errCode = 0x00000005, strProcessName = wsc_proxy.exe, dwProcessID = 2792.
+[000035F4] 2024-09-26 08:18:42     enumDLLs::OpenProcess: error, errCode = 0x00000005, strProcessName = Memory Compression, dwProcessID = 2880.
+[000035F4] 2024-09-26 08:18:42     enumDLLs::OpenProcess: error, errCode = 0x00000005, strProcessName = AvastSvc.exe, dwProcessID = 3912.
+[000035F4] 2024-09-26 08:18:42     enumDLLs::OpenProcess: error, errCode = 0x00000005, strProcessName = svchost.exe, dwProcessID = 5904.
+[000035F4] 2024-09-26 08:18:43     enumDLLs::OpenProcess: error, errCode = 0x00000005, strProcessName = SecurityHealthService.exe, dwProcessID = 10664.
+[000035F4] 2024-09-26 08:18:44     enumDLLs::OpenProcess: error, errCode = 0x00000005, strProcessName = svchost.exe, dwProcessID = 16076.
+[000035F4] 2024-09-26 08:18:44     enumDLLs::OpenProcess: error, errCode = 0x00000005, strProcessName = svchost.exe, dwProcessID = 14256.
+[000035F4] 2024-09-26 08:18:44     enumDLLs::OpenProcess: error, errCode = 0x00000005, strProcessName = svchost.exe, dwProcessID = 12944.
+[000035F4] 2024-09-26 08:18:45 <-- enumProcesses
+[000035F4] 2024-09-26 08:18:45 <-- getInUseProcesses
+[000035F4] 2024-09-26 08:18:45     <-- _tmain: succeed, nStatus = 0.
+[00000EC0] 2024-09-26 08:18:59 --> wmain
+[00000EC0] 2024-09-26 08:18:59     _tmain: executing, argv[1] = -n.
+[00000EC0] 2024-09-26 08:18:59     _tmain: executing, argv[2] = -c.
+[00000EC0] 2024-09-26 08:18:59 --> ClearDriverStore
+[00000EC0] 2024-09-26 08:18:59 --> executeCommand
+[00000EC0] 2024-09-26 08:18:59     executeCommand: executing, strCmd = pnputil.exe -e.
+[00000EC0] 2024-09-26 08:18:59     executeCommand: result = Utilitário PnP da Microsoft
+
+Nome publicado:            oem44.inf
+Provedor de pacotes de drivers:   BayHubTech
+Classe:                     Controladores de armazenamento
+Data e versão do driver:   11/04/2021 2.1.101.10540
+Nome do signatário:               Microsoft Windows Hardware Compatibility Publisher
+
+Nome publicado:            oem16.inf
+Provedor de pacotes de drivers:   Intel(R) Corporation
+Classe:                     Dispositivos de sistema
+Data e versão do driver:   10/27/2022 1.0.2726.0
+Nome do signatário:               Microsoft Windows Hardware Compatibility Publisher
+
+Nome publicado:            oem7.inf
+Provedor de pacotes de drivers:   Intel
+Classe:                     Dispositivos de sistema
+Data e versão do driver:   07/23/2021 8.7.10700.22502
+Nome do signatário:               Microsoft Windows Hardware Compatibility Publisher
+
+Nome publicado:            oem27.inf
+Provedor de pacotes de drivers:   Intel
+Classe:                     Dispositivos de sistema
+Data e versão do driver:   07/23/2021 8.7.10700.22502
+Nome do signatário:               Microsoft Windows Hardware Compatibility Publisher
+
+Nome publicado:            oem49.inf
+Provedor de pacotes de drivers:   Samsung Electronics Co., Ltd.
+Classe:                     Firmware
+Data e versão do driver:   02/24/2024 0.0.21.51
+Nome do signatário:               Microsoft Windows Hardware Compatibility Publisher
+
+Nome publicado:            oem6.inf
+Provedor de pacotes de drivers:   Samsung Electronics Co., Ltd.
+Classe:                     Extensões
+Data e versão do driver:   07/26/2023 1.0.5.5
+Nome do signatário:               Microsoft Windows Hardware Compatibility Publisher
+
+Nome publicado:            oem18.inf
+Provedor de pacotes de drivers:   Intel Corporation
+Classe:                     Dispositivos de sistema
+Data e versão do driver:   11/26/2021 3.0.0.1457
+Nome do signatário:               Microsoft Windows Hardware Compatibility Publisher
+
+Nome publicado:            oem24.inf
+Provedor de pacotes de drivers:   Intel Corporation
+Classe:                     Extensões
+Data e versão do driver:   07/23/2021 30.0.100.9805
+Nome do signatário:               Microsoft Windows Hardware Compatibility Publisher
+
+Nome publicado:            oem40.inf
+Provedor de pacotes de drivers:   Realtek Semiconductor Corp.
+Classe:                     Extensões
+Data e versão do driver:   03/30/2023 6.0.9500.1
+Nome do signatário:               Microsoft Windows Hardware Compatibility Publisher
+
+Nome publicado:            oem39.inf
+Provedor de pacotes de drivers:   Realtek Semiconductor Corp.
+Classe:                     Extensões
+Data e versão do driver:   03/30/2023 6.0.9500.1
+Nome do signatário:               Microsoft Windows Hardware Compatibility Publisher
+
+Nome publicado:            oem28.inf
+Provedor de pacotes de drivers:   Intel
+Classe:                     Dispositivos de sistema
+Data e versão do driver:   05/11/2021 2120.100.0.1085
+Nome do signatário:               Microsoft Windows Hardware Compatibility Publisher
+
+Nome publicado:            oem1.inf
+Provedor de pacotes de drivers:   Intel Corporation
+Classe:                     Dispositivos de sistema
+Data e versão do driver:   07/13/2021 30.100.2129.8
+Nome do signatário:               Microsoft Windows Hardware Compatibility Publisher
+
+Nome publicado:            oem19.inf
+Provedor de pacotes de drivers:   Intel Corporation
+Classe:                     Dispositivos de sistema
+Data e versão do driver:   07/13/2021 30.100.2129.8
+Nome do signatário:               Microsoft Windows Hardware Compatibility Publisher
+
+Nome publicado:            oem26.inf
+Provedor de pacotes de drivers:   Intel Corporation
+Classe:                     Extensões
+Data e versão do driver:   07/23/2021 30.0.100.9805
+Nome do signatário:               Microsoft Windows Hardware Compatibility Publisher
+
+Nome publicado:            oem9.inf
+Provedor de pacotes de drivers:   Intel(R) Corporation
+Classe:                     Dispositivos de sistema
+Data e versão do driver:   01/12/2023 10.29.0.8467
+Nome do signatário:               Microsoft Windows Hardware Compatibility Publisher
+
+Nome publicado:            oem10.inf
+Provedor de pacotes de drivers:   Intel(R) Corporation
+Classe:                     Dispositivos de sistema
+Data e versão do driver:   01/12/2023 10.29.0.8467
+Nome do signatário:               Microsoft Windows Hardware Compatibility Publisher
+
+Nome publicado:            oem46.inf
+Provedor de pacotes de drivers:   Realtek Semiconductor Corp.
+Classe:                     Extensões
+Data e versão do driver:   07/01/2021 10.0.231.17
+Nome do signatário:               Microsoft Windows Hardware Compatibility Publisher
+
+Nome publicado:            oem17.inf
+Provedor de pacotes de drivers:   Intel(R) Corporation
+Classe:                     Dispositivos de sistema
+Data e versão do driver:   01/12/2023 10.29.0.8467
+Nome do signatário:               Microsoft Windows Hardware Compatibility Publisher
+
+Nome publicado:            oem48.inf
+Provedor de pacotes de drivers:   Intel(R) Corporation
+Classe:                     Extensões
+Data e versão do driver:   10/27/2022 1.0.2726.0
+Nome do signatário:               Microsoft Windows Hardware Compatibility Publisher
+
+Nome publicado:            oem2.inf
+Provedor de pacotes de drivers:   Samsung
+Classe:                     Dispositivos de sistema
+Data e versão do driver:   09/27/2021 1.0.0.8
+Nome do signatário:               Microsoft Windows Hardware Compatibility Publisher
+
+Nome publicado:            oem3.inf
+Provedor de pacotes de drivers:   Samsung
+Classe:                     Extensões
+Data e versão do driver:   11/11/2021 1.2.1.0
+Nome do signatário:               Microsoft Windows Hardware Compatibility Publisher
+
+Nome publicado:            oem5.inf
+Provedor de pacotes de drivers:   Samsung
+Classe:                     Extensões
+Data e versão do driver:   06/25/2020 1.2.0.0
+Nome do signatário:               Microsoft Windows Hardware Compatibility Publisher
+
+Nome publicado:            oem4.inf
+Provedor de pacotes de drivers:   Samsung Electronics Co., Ltd.
+Classe:                     Extensões
+Data e versão do driver:   11/25/2021 1.0.2.2
+Nome do signatário:               Microsoft Windows Hardware Compatibility Publisher
+
+Nome publicado:            oem8.inf
+Provedor de pacotes de drivers:   INTEL
+Classe:                     Dispositivos de sistema
+Data e versão do driver:   07/18/1968 10.1.24.6
+Nome do signatário:               Microsoft Windows Hardware Compatibility Publisher
+
+Nome publicado:            oem50.inf
+Provedor de pacotes de drivers:   Oracle Corporation
+Classe:                     Controladores USB (barramento serial universal)
+Data e versão do driver:   05/02/2024 7.0.18.12988
+Nome do signatário:               Microsoft Windows Hardware Compatibility Publisher
+
+Nome publicado:            oem21.inf
+Provedor de pacotes de drivers:   Intel Corporation
+Classe:                     Componentes de software
+Data e versão do driver:   07/23/2021 30.0.100.9805
+Nome do signatário:               Microsoft Windows Hardware Compatibility Publisher
+
+Nome publicado:            oem55.inf
+Provedor de pacotes de drivers:   Intel
+Classe:                     Componentes de software
+Data e versão do driver:   07/11/2023 1.44.2023.710
+Nome do signatário:               Microsoft Windows Hardware Compatibility Publisher
+
+Nome publicado:            oem35.inf
+Provedor de pacotes de drivers:   Intel
+Classe:                     Componentes de software
+Data e versão do driver:   01/21/2021 1.41.2021.121
+Nome do signatário:               Microsoft Windows Hardware Compatibility Publisher
+
+Nome publicado:            oem36.inf
+Provedor de pacotes de drivers:   Samsung Electronics Co., Ltd.
+Classe:                     Componentes de software
+Data e versão do driver:   12/05/2022 1.0.13.15
+Nome do signatário:               Microsoft Windows Hardware Compatibility Publisher
+
+Nome publicado:            oem38.inf
+Provedor de pacotes de drivers:   Realtek Semiconductor Corp.
+Classe:                     Controladores de som, vídeo e jogos
+Data e versão do driver:   03/30/2023 6.0.9500.1
+Nome do signatário:               Microsoft Windows Hardware Compatibility Publisher
+
+Nome publicado:            oem37.inf
+Provedor de pacotes de drivers:   Intel Corporation
+Classe:                     Bluetooth
+Data e versão do driver:   07/11/2023 22.250.0.2
+Nome do signatário:               Microsoft Windows Hardware Compatibility Publisher
+
+Nome publicado:            oem32.inf
+Provedor de pacotes de drivers:   Intel
+Classe:                     Componentes de software
+Data e versão do driver:   09/07/2021 1.63.1155.1
+Nome do signatário:               Microsoft Windows Hardware Compatibility Publisher
+
+Nome publicado:            oem54.inf
+Provedor de pacotes de drivers:   Intel
+Classe:                     Componentes de software
+Data e versão do driver:   12/06/2023 1.71.99.0
+Nome do signatário:               Microsoft Windows Hardware Compatibility Publisher
+
+Nome publicado:            oem22.inf
+Provedor de pacotes de drivers:   Intel Corporation
+Classe:                     Componentes de software
+Data e versão do driver:   07/23/2021 30.0.100.9805
+Nome do signatário:               Microsoft Windows Hardware Compatibility Publisher
+
+Nome publicado:            oem20.inf
+Provedor de pacotes de drivers:   Intel Corporation
+Classe:                     Adaptadores de vídeo
+Data e versão do driver:   07/23/2021 30.0.100.9805
+Nome do signatário:               Microsoft Windows Hardware Compatibility Publisher
+
+Nome publicado:            oem15.inf
+Provedor de pacotes de drivers:   Intel(R) Corporation
+Classe:                     Controladores de som, vídeo e jogos
+Data e versão do driver:   01/12/2023 10.29.0.8467
+Nome do signatário:               Microsoft Windows Hardware Compatibility Publisher
+
+Nome publicado:            oem25.inf
+Provedor de pacotes de drivers:   Intel(R) Corporation
+Classe:                     Controladores de som, vídeo e jogos
+Data e versão do driver:   04/16/2021 11.2.0.8
+Nome do signatário:               Microsoft Windows Hardware Compatibility Publisher
+
+Nome publicado:            oem14.inf
+Provedor de pacotes de drivers:   Intel(R) Corporation
+Classe:                     Controladores de som, vídeo e jogos
+Data e versão do driver:   01/12/2023 10.29.0.8467
+Nome do signatário:               Microsoft Windows Hardware Compatibility Publisher
+
+Nome publicado:            oem12.inf
+Provedor de pacotes de drivers:   Intel(R) Corporation
+Classe:                     Controladores de som, vídeo e jogos
+Data e versão do driver:   01/12/2023 10.29.0.8467
+Nome do signatário:               Microsoft Windows Hardware Compatibility Publisher
+
+Nome publicado:            oem13.inf
+Provedor de pacotes de drivers:   Intel(R) Corporation
+Classe:                     Controladores de som, vídeo e jogos
+Data e versão do driver:   01/12/2023 10.29.0.8467
+Nome do signatário:               Microsoft Windows Hardware Compatibility Publisher
+
+Nome publicado:            oem11.inf
+Provedor de pacotes de drivers:   Intel(R) Corporation
+Classe:                     Controladores de som, vídeo e jogos
+Data e versão do driver:   01/12/2023 10.29.0.8467
+Nome do signatário:               Microsoft Windows Hardware Compatibility Publisher
+
+Nome publicado:            oem56.inf
+Provedor de pacotes de drivers:   Intel
+Classe:                     Componentes de software
+Data e versão do driver:   02/21/2024 2316.5.1.12
+Nome do signatário:               Microsoft Windows Hardware Compatibility Publisher
+
+Nome publicado:            oem31.inf
+Provedor de pacotes de drivers:   Intel
+Classe:                     Componentes de software
+Data e versão do driver:   09/01/2021 2130.1.16.1
+Nome do signatário:               Microsoft Windows Hardware Compatibility Publisher
+
+Nome publicado:            oem29.inf
+Provedor de pacotes de drivers:   Intel
+Classe:                     Componentes de software
+Data e versão do driver:   07/22/2021 2130.1.15.0
+Nome do signatário:               Microsoft Windows Hardware Compatibility Publisher
+
+Nome publicado:            oem53.inf
+Provedor de pacotes de drivers:   Intel
+Classe:                     Componentes de software
+Data e versão do driver:   02/21/2024 2408.5.4.0
+Nome do signatário:               Microsoft Windows Hardware Compatibility Publisher
+
+Nome publicado:            oem23.inf
+Provedor de pacotes de drivers:   Intel Corporation
+Classe:                     Controladores de som, vídeo e jogos
+Data e versão do driver:   07/23/2021 30.0.100.9805
+Nome do signatário:               Microsoft Windows Hardware Compatibility Publisher
+
+Nome publicado:            oem47.inf
+Provedor de pacotes de drivers:   Intel
+Classe:                     Adaptadores de rede
+Data e versão do driver:   11/23/2022 22.190.0.4
+Nome do signatário:               Microsoft Windows Hardware Compatibility Publisher
+
+Nome publicado:            oem0.inf
+Provedor de pacotes de drivers:   Microsoft
+Classe:                     Impressoras
+Data e versão do driver:   06/21/2006 10.0.22621.1
+Nome do signatário:               Microsoft Windows
+
+Nome publicado:            oem41.inf
+Provedor de pacotes de drivers:   Realtek
+Classe:                     Componentes de software
+Data e versão do driver:   03/30/2023 11.0.6000.291
+Nome do signatário:               Microsoft Windows Hardware Compatibility Publisher
+
+Nome publicado:            oem42.inf
+Provedor de pacotes de drivers:   Realtek
+Classe:                     Componentes de software
+Data e versão do driver:   03/29/2023 1.0.604.0
+Nome do signatário:               Microsoft Windows Hardware Compatibility Publisher
+
+Nome publicado:            oem43.inf
+Provedor de pacotes de drivers:   Realtek
+Classe:                     Componentes de software
+Data e versão do driver:   03/27/2023 12.137.1101.127
+Nome do signatário:               Microsoft Windows Hardware Compatibility Publisher
+
+Nome publicado:            oem45.inf
+Provedor de pacotes de drivers:   Realtek
+Classe:                     Adaptadores de rede
+Data e versão do driver:   10/22/2021 1168.3.1022.2021
+Nome do signatário:               Microsoft Windows Hardware Compatibility Publisher
+
+Nome publicado:            oem33.inf
+Provedor de pacotes de drivers:   Samsung
+Classe:                     Componentes de software
+Data e versão do driver:   06/09/2022 1.2.43.0
+Nome do signatário:               Microsoft Windows Hardware Compatibility Publisher
+
+Nome publicado:            oem30.inf
+Provedor de pacotes de drivers:   Samsung
+Classe:                     Componentes de software
+Data e versão do driver:   06/15/2023 1.2.17.2
+Nome do signatário:               Microsoft Windows Hardware Compatibility Publisher
+
+Nome publicado:            oem34.inf
+Provedor de pacotes de drivers:   Samsung Electronics Co., Ltd.
+Classe:                     Componentes de software
+Data e versão do driver:   04/09/2021 1.0.5.7
+Nome do signatário:               Microsoft Windows Hardware Compatibility Publisher
+
+Nome publicado:            oem51.inf
+Provedor de pacotes de drivers:   Oracle Corporation
+Classe:                     Adaptadores de rede
+Data e versão do driver:   05/02/2024 7.0.18.12988
+Nome do signatário:               Microsoft Windows Hardware Compatibility Publisher
+
+Nome publicado:            oem52.inf
+Provedor de pacotes de drivers:   Oracle Corporation
+Classe:                     Serviço de Rede
+Data e versão do driver:   05/02/2024 7.0.18.12988
+Nome do signatário:               Microsoft Windows Hardware Compatibility Publisher
+
+.
+[00000EC0] 2024-09-26 08:18:59 <-- executeCommand
+[00000EC0] 2024-09-26 08:18:59 --> getInfNamesFromPnpUtilOutput
+[00000EC0] 2024-09-26 08:18:59 <-- getInfNamesFromPnpUtilOutput
+[00000EC0] 2024-09-26 08:18:59 <-- ClearDriverStore
+[00000EC0] 2024-09-26 08:18:59     <-- _tmain: succeed, nStatus = 0.
+[00002718] 2024-09-26 08:19:00 --> wmain
+[00002718] 2024-09-26 08:19:00     _tmain: executing, argv[1] = -n.
+[00002718] 2024-09-26 08:19:00     _tmain: executing, argv[2] = -iw.
+[00002718] 2024-09-26 08:19:00 --> InstallWFPCallout
+[00002718] 2024-09-26 08:19:00 --> GetWFPCalloutInfFilePath
+[00002718] 2024-09-26 08:19:00     lpFilename = C:\Program Files\Npcap\NPCAP_wfp.inf
+[00002718] 2024-09-26 08:19:00 <-- GetWFPCalloutInfFilePath
+[00002718] 2024-09-26 08:19:00 --> isFileExist
+[00002718] 2024-09-26 08:19:00     FindFirstFile: succeed, szFileFullPath = C:\Program Files\Npcap\NPCAP_wfp.inf.
+[00002718] 2024-09-26 08:19:00 <-- isFileExist
+[00002718] 2024-09-26 08:19:00     LaunchINFSectionEx: executing, szCmd = C:\Program Files\Npcap\NPCAP_wfp.inf,DefaultInstall,,36,N.
+[00002718] 2024-09-26 08:19:00 <-- InstallWFPCallout
+[00002718] 2024-09-26 08:19:00     <-- _tmain: succeed, nStatus = 0.
+[0000203C] 2024-09-26 08:19:00 --> wmain
+[0000203C] 2024-09-26 08:19:00     _tmain: executing, argv[1] = -n.
+[0000203C] 2024-09-26 08:19:00     _tmain: executing, argv[2] = -i.
+[0000203C] 2024-09-26 08:19:00 --> UninstallDriver
+[0000203C] 2024-09-26 08:19:00 --> HrGetINetCfg
+[0000203C] 2024-09-26 08:19:00 <-- HrGetINetCfg
+[0000203C] 2024-09-26 08:19:00     bWiFiService = 0.
+[0000203C] 2024-09-26 08:19:00     HrUninstallNetComponent: executing, szComponentId = INSECURE_NPCAP.
+[0000203C] 2024-09-26 08:19:00 --> HrUninstallNetComponent
+[0000203C] 2024-09-26 08:19:00     Error 0x1: Couldn't get an interface pointer to INSECURE_NPCAP.
+
+Possible cause:
+
+Função incorreta.
+
+[0000203C] 2024-09-26 08:19:00 <-- HrUninstallNetComponent
+[0000203C] 2024-09-26 08:19:00     Error 0x1: Couldn't uninstall the network component.
+
+Possible cause:
+
+Função incorreta.
+
+[0000203C] 2024-09-26 08:19:00 --> HrReleaseINetCfg
+[0000203C] 2024-09-26 08:19:00 <-- HrReleaseINetCfg
+[0000203C] 2024-09-26 08:19:00 <-- UninstallDriver
+[0000203C] 2024-09-26 08:19:00 --> InstallDriver
+[0000203C] 2024-09-26 08:19:00 --> GetServiceInfFilePath
+[0000203C] 2024-09-26 08:19:00     lpFilename = C:\Program Files\Npcap\NPCAP.inf
+[0000203C] 2024-09-26 08:19:00 <-- GetServiceInfFilePath
+[0000203C] 2024-09-26 08:19:00 --> InstallSpecifiedComponent
+[0000203C] 2024-09-26 08:19:00 --> HrGetINetCfg
+[0000203C] 2024-09-26 08:19:00 <-- HrGetINetCfg
+[0000203C] 2024-09-26 08:19:00 --> HrInstallNetComponent
+[0000203C] 2024-09-26 08:19:00     bWiFiService = 0.
+[0000203C] 2024-09-26 08:19:00     HrInstallComponent: executing, szComponentId = INSECURE_NPCAP.
+[0000203C] 2024-09-26 08:19:00 --> HrInstallComponent
+[0000203C] 2024-09-26 08:19:05 <-- HrInstallComponent
+[0000203C] 2024-09-26 08:19:05 <-- HrInstallNetComponent
+[0000203C] 2024-09-26 08:19:05 --> HrReleaseINetCfg
+[0000203C] 2024-09-26 08:19:05 <-- HrReleaseINetCfg
+[0000203C] 2024-09-26 08:19:05 <-- InstallSpecifiedComponent
+[0000203C] 2024-09-26 08:19:05 <-- InstallDriver
+[0000203C] 2024-09-26 08:19:05     <-- _tmain: succeed, nStatus = 0.
+[0000358C] 2024-09-26 08:26:25 --> wmain
+[0000358C] 2024-09-26 08:26:25     _tmain: executing, argv[1] = -n.
+[0000358C] 2024-09-26 08:26:25     _tmain: executing, argv[2] = -check_dll.
+[0000358C] 2024-09-26 08:26:25 --> getInUseProcesses
+[0000358C] 2024-09-26 08:26:25 --> enumProcesses
+[0000358C] 2024-09-26 08:26:25 --> getNpcapPIDs
+[0000358C] 2024-09-26 08:26:25     Npcap handle opened
+[0000358C] 2024-09-26 08:26:25     BIOCGETPIDS returned 8 bytes, 1 pids
+[0000358C] 2024-09-26 08:26:25 <-- getNpcapPIDs
+[0000358C] 2024-09-26 08:26:25     enumDLLs::OpenProcess: error, errCode = 0x00000005, strProcessName = System, dwProcessID = 4.
+[0000358C] 2024-09-26 08:26:25     enumDLLs::OpenProcess: error, errCode = 0x00000005, strProcessName = Registry, dwProcessID = 80.
+[0000358C] 2024-09-26 08:26:25     enumDLLs::OpenProcess: error, errCode = 0x00000005, strProcessName = smss.exe, dwProcessID = 532.
+[0000358C] 2024-09-26 08:26:25     enumDLLs::OpenProcess: error, errCode = 0x00000005, strProcessName = csrss.exe, dwProcessID = 764.
+[0000358C] 2024-09-26 08:26:25     enumDLLs::OpenProcess: error, errCode = 0x00000005, strProcessName = wininit.exe, dwProcessID = 856.
+[0000358C] 2024-09-26 08:26:25     enumDLLs::OpenProcess: error, errCode = 0x00000005, strProcessName = csrss.exe, dwProcessID = 868.
+[0000358C] 2024-09-26 08:26:25     enumDLLs::OpenProcess: error, errCode = 0x00000005, strProcessName = services.exe, dwProcessID = 920.
+[0000358C] 2024-09-26 08:26:25     EnumProcessModulesEx: error, errCode = 0x00000005.
+[0000358C] 2024-09-26 08:26:25     enumDLLs::OpenProcess: error, errCode = 0x00000005, strProcessName = wsc_proxy.exe, dwProcessID = 2792.
+[0000358C] 2024-09-26 08:26:25     enumDLLs::OpenProcess: error, errCode = 0x00000005, strProcessName = Memory Compression, dwProcessID = 2880.
+[0000358C] 2024-09-26 08:26:25     enumDLLs::OpenProcess: error, errCode = 0x00000005, strProcessName = AvastSvc.exe, dwProcessID = 3912.
+[0000358C] 2024-09-26 08:26:25     enumDLLs::OpenProcess: error, errCode = 0x00000005, strProcessName = svchost.exe, dwProcessID = 5904.
+[0000358C] 2024-09-26 08:26:26     enumDLLs::OpenProcess: error, errCode = 0x00000005, strProcessName = SecurityHealthService.exe, dwProcessID = 10664.
+[0000358C] 2024-09-26 08:26:27     enumDLLs::OpenProcess: error, errCode = 0x00000005, strProcessName = svchost.exe, dwProcessID = 16076.
+[0000358C] 2024-09-26 08:26:27     enumDLLs::OpenProcess: error, errCode = 0x00000005, strProcessName = svchost.exe, dwProcessID = 14256.
+[0000358C] 2024-09-26 08:26:27     enumDLLs::OpenProcess: error, errCode = 0x00000005, strProcessName = svchost.exe, dwProcessID = 8580.
+[0000358C] 2024-09-26 08:26:27 <-- enumProcesses
+[0000358C] 2024-09-26 08:26:27 <-- getInUseProcesses
+[0000358C] 2024-09-26 08:26:27     <-- _tmain: succeed, nStatus = 0.
+[00002300] 2024-09-26 08:26:35 --> wmain
+[00002300] 2024-09-26 08:26:35     _tmain: executing, argv[1] = -n.
+[00002300] 2024-09-26 08:26:35     _tmain: executing, argv[2] = -u.
+[00002300] 2024-09-26 08:26:35 --> UninstallDriver
+[00002300] 2024-09-26 08:26:35 --> HrGetINetCfg
+[00002300] 2024-09-26 08:26:35 <-- HrGetINetCfg
+[00002300] 2024-09-26 08:26:35     bWiFiService = 0.
+[00002300] 2024-09-26 08:26:35     HrUninstallNetComponent: executing, szComponentId = INSECURE_NPCAP.
+[00002300] 2024-09-26 08:26:35 --> HrUninstallNetComponent
+[00002300] 2024-09-26 08:26:35 <-- HrUninstallNetComponent
+[00002300] 2024-09-26 08:26:35 --> HrReleaseINetCfg
+[00002300] 2024-09-26 08:26:35 <-- HrReleaseINetCfg
+[00002300] 2024-09-26 08:26:35 <-- UninstallDriver
+[00002300] 2024-09-26 08:26:35     <-- _tmain: succeed, nStatus = 0.
+[000011D8] 2024-09-26 08:26:35 --> wmain
+[000011D8] 2024-09-26 08:26:35     _tmain: executing, argv[1] = -n.
+[000011D8] 2024-09-26 08:26:35     _tmain: executing, argv[2] = -uw.
+[000011D8] 2024-09-26 08:26:35 --> UninstallWFPCallout
+[000011D8] 2024-09-26 08:26:35 --> GetWFPCalloutInfFilePath
+[000011D8] 2024-09-26 08:26:35     lpFilename = C:\Program Files\Npcap\NPCAP_wfp.inf
+[000011D8] 2024-09-26 08:26:35 <-- GetWFPCalloutInfFilePath
+[000011D8] 2024-09-26 08:26:35 --> isFileExist
+[000011D8] 2024-09-26 08:26:35     FindFirstFile: succeed, szFileFullPath = C:\Program Files\Npcap\NPCAP_wfp.inf.
+[000011D8] 2024-09-26 08:26:35 <-- isFileExist
+[000011D8] 2024-09-26 08:26:35     LaunchINFSectionEx: executing, szCmd = C:\Program Files\Npcap\NPCAP_wfp.inf,DefaultUninstall,,36,N.
+[000011D8] 2024-09-26 08:26:35 <-- UninstallWFPCallout
+[000011D8] 2024-09-26 08:26:35     <-- _tmain: succeed, nStatus = 0.
+[00001F84] 2024-09-26 08:26:35 --> wmain
+[00001F84] 2024-09-26 08:26:35     _tmain: executing, argv[1] = -n.
+[00001F84] 2024-09-26 08:26:35     _tmain: executing, argv[2] = -c.
+[00001F84] 2024-09-26 08:26:35 --> ClearDriverStore
+[00001F84] 2024-09-26 08:26:35 --> executeCommand
+[00001F84] 2024-09-26 08:26:35     executeCommand: executing, strCmd = pnputil.exe -e.
+[00001F84] 2024-09-26 08:26:36     executeCommand: result = Utilitário PnP da Microsoft
+
+Nome publicado:            oem44.inf
+Provedor de pacotes de drivers:   BayHubTech
+Classe:                     Controladores de armazenamento
+Data e versão do driver:   11/04/2021 2.1.101.10540
+Nome do signatário:               Microsoft Windows Hardware Compatibility Publisher
+
+Nome publicado:            oem16.inf
+Provedor de pacotes de drivers:   Intel(R) Corporation
+Classe:                     Dispositivos de sistema
+Data e versão do driver:   10/27/2022 1.0.2726.0
+Nome do signatário:               Microsoft Windows Hardware Compatibility Publisher
+
+Nome publicado:            oem7.inf
+Provedor de pacotes de drivers:   Intel
+Classe:                     Dispositivos de sistema
+Data e versão do driver:   07/23/2021 8.7.10700.22502
+Nome do signatário:               Microsoft Windows Hardware Compatibility Publisher
+
+Nome publicado:            oem27.inf
+Provedor de pacotes de drivers:   Intel
+Classe:                     Dispositivos de sistema
+Data e versão do driver:   07/23/2021 8.7.10700.22502
+Nome do signatário:               Microsoft Windows Hardware Compatibility Publisher
+
+Nome publicado:            oem49.inf
+Provedor de pacotes de drivers:   Samsung Electronics Co., Ltd.
+Classe:                     Firmware
+Data e versão do driver:   02/24/2024 0.0.21.51
+Nome do signatário:               Microsoft Windows Hardware Compatibility Publisher
+
+Nome publicado:            oem6.inf
+Provedor de pacotes de drivers:   Samsung Electronics Co., Ltd.
+Classe:                     Extensões
+Data e versão do driver:   07/26/2023 1.0.5.5
+Nome do signatário:               Microsoft Windows Hardware Compatibility Publisher
+
+Nome publicado:            oem18.inf
+Provedor de pacotes de drivers:   Intel Corporation
+Classe:                     Dispositivos de sistema
+Data e versão do driver:   11/26/2021 3.0.0.1457
+Nome do signatário:               Microsoft Windows Hardware Compatibility Publisher
+
+Nome publicado:            oem24.inf
+Provedor de pacotes de drivers:   Intel Corporation
+Classe:                     Extensões
+Data e versão do driver:   07/23/2021 30.0.100.9805
+Nome do signatário:               Microsoft Windows Hardware Compatibility Publisher
+
+Nome publicado:            oem40.inf
+Provedor de pacotes de drivers:   Realtek Semiconductor Corp.
+Classe:                     Extensões
+Data e versão do driver:   03/30/2023 6.0.9500.1
+Nome do signatário:               Microsoft Windows Hardware Compatibility Publisher
+
+Nome publicado:            oem39.inf
+Provedor de pacotes de drivers:   Realtek Semiconductor Corp.
+Classe:                     Extensões
+Data e versão do driver:   03/30/2023 6.0.9500.1
+Nome do signatário:               Microsoft Windows Hardware Compatibility Publisher
+
+Nome publicado:            oem28.inf
+Provedor de pacotes de drivers:   Intel
+Classe:                     Dispositivos de sistema
+Data e versão do driver:   05/11/2021 2120.100.0.1085
+Nome do signatário:               Microsoft Windows Hardware Compatibility Publisher
+
+Nome publicado:            oem1.inf
+Provedor de pacotes de drivers:   Intel Corporation
+Classe:                     Dispositivos de sistema
+Data e versão do driver:   07/13/2021 30.100.2129.8
+Nome do signatário:               Microsoft Windows Hardware Compatibility Publisher
+
+Nome publicado:            oem19.inf
+Provedor de pacotes de drivers:   Intel Corporation
+Classe:                     Dispositivos de sistema
+Data e versão do driver:   07/13/2021 30.100.2129.8
+Nome do signatário:               Microsoft Windows Hardware Compatibility Publisher
+
+Nome publicado:            oem26.inf
+Provedor de pacotes de drivers:   Intel Corporation
+Classe:                     Extensões
+Data e versão do driver:   07/23/2021 30.0.100.9805
+Nome do signatário:               Microsoft Windows Hardware Compatibility Publisher
+
+Nome publicado:            oem9.inf
+Provedor de pacotes de drivers:   Intel(R) Corporation
+Classe:                     Dispositivos de sistema
+Data e versão do driver:   01/12/2023 10.29.0.8467
+Nome do signatário:               Microsoft Windows Hardware Compatibility Publisher
+
+Nome publicado:            oem10.inf
+Provedor de pacotes de drivers:   Intel(R) Corporation
+Classe:                     Dispositivos de sistema
+Data e versão do driver:   01/12/2023 10.29.0.8467
+Nome do signatário:               Microsoft Windows Hardware Compatibility Publisher
+
+Nome publicado:            oem46.inf
+Provedor de pacotes de drivers:   Realtek Semiconductor Corp.
+Classe:                     Extensões
+Data e versão do driver:   07/01/2021 10.0.231.17
+Nome do signatário:               Microsoft Windows Hardware Compatibility Publisher
+
+Nome publicado:            oem17.inf
+Provedor de pacotes de drivers:   Intel(R) Corporation
+Classe:                     Dispositivos de sistema
+Data e versão do driver:   01/12/2023 10.29.0.8467
+Nome do signatário:               Microsoft Windows Hardware Compatibility Publisher
+
+Nome publicado:            oem48.inf
+Provedor de pacotes de drivers:   Intel(R) Corporation
+Classe:                     Extensões
+Data e versão do driver:   10/27/2022 1.0.2726.0
+Nome do signatário:               Microsoft Windows Hardware Compatibility Publisher
+
+Nome publicado:            oem2.inf
+Provedor de pacotes de drivers:   Samsung
+Classe:                     Dispositivos de sistema
+Data e versão do driver:   09/27/2021 1.0.0.8
+Nome do signatário:               Microsoft Windows Hardware Compatibility Publisher
+
+Nome publicado:            oem3.inf
+Provedor de pacotes de drivers:   Samsung
+Classe:                     Extensões
+Data e versão do driver:   11/11/2021 1.2.1.0
+Nome do signatário:               Microsoft Windows Hardware Compatibility Publisher
+
+Nome publicado:            oem5.inf
+Provedor de pacotes de drivers:   Samsung
+Classe:                     Extensões
+Data e versão do driver:   06/25/2020 1.2.0.0
+Nome do signatário:               Microsoft Windows Hardware Compatibility Publisher
+
+Nome publicado:            oem4.inf
+Provedor de pacotes de drivers:   Samsung Electronics Co., Ltd.
+Classe:                     Extensões
+Data e versão do driver:   11/25/2021 1.0.2.2
+Nome do signatário:               Microsoft Windows Hardware Compatibility Publisher
+
+Nome publicado:            oem8.inf
+Provedor de pacotes de drivers:   INTEL
+Classe:                     Dispositivos de sistema
+Data e versão do driver:   07/18/1968 10.1.24.6
+Nome do signatário:               Microsoft Windows Hardware Compatibility Publisher
+
+Nome publicado:            oem50.inf
+Provedor de pacotes de drivers:   Oracle Corporation
+Classe:                     Controladores USB (barramento serial universal)
+Data e versão do driver:   05/02/2024 7.0.18.12988
+Nome do signatário:               Microsoft Windows Hardware Compatibility Publisher
+
+Nome publicado:            oem21.inf
+Provedor de pacotes de drivers:   Intel Corporation
+Classe:                     Componentes de software
+Data e versão do driver:   07/23/2021 30.0.100.9805
+Nome do signatário:               Microsoft Windows Hardware Compatibility Publisher
+
+Nome publicado:            oem55.inf
+Provedor de pacotes de drivers:   Intel
+Classe:                     Componentes de software
+Data e versão do driver:   07/11/2023 1.44.2023.710
+Nome do signatário:               Microsoft Windows Hardware Compatibility Publisher
+
+Nome publicado:            oem35.inf
+Provedor de pacotes de drivers:   Intel
+Classe:                     Componentes de software
+Data e versão do driver:   01/21/2021 1.41.2021.121
+Nome do signatário:               Microsoft Windows Hardware Compatibility Publisher
+
+Nome publicado:            oem36.inf
+Provedor de pacotes de drivers:   Samsung Electronics Co., Ltd.
+Classe:                     Componentes de software
+Data e versão do driver:   12/05/2022 1.0.13.15
+Nome do signatário:               Microsoft Windows Hardware Compatibility Publisher
+
+Nome publicado:            oem38.inf
+Provedor de pacotes de drivers:   Realtek Semiconductor Corp.
+Classe:                     Controladores de som, vídeo e jogos
+Data e versão do driver:   03/30/2023 6.0.9500.1
+Nome do signatário:               Microsoft Windows Hardware Compatibility Publisher
+
+Nome publicado:            oem37.inf
+Provedor de pacotes de drivers:   Intel Corporation
+Classe:                     Bluetooth
+Data e versão do driver:   07/11/2023 22.250.0.2
+Nome do signatário:               Microsoft Windows Hardware Compatibility Publisher
+
+Nome publicado:            oem32.inf
+Provedor de pacotes de drivers:   Intel
+Classe:                     Componentes de software
+Data e versão do driver:   09/07/2021 1.63.1155.1
+Nome do signatário:               Microsoft Windows Hardware Compatibility Publisher
+
+Nome publicado:            oem54.inf
+Provedor de pacotes de drivers:   Intel
+Classe:                     Componentes de software
+Data e versão do driver:   12/06/2023 1.71.99.0
+Nome do signatário:               Microsoft Windows Hardware Compatibility Publisher
+
+Nome publicado:            oem22.inf
+Provedor de pacotes de drivers:   Intel Corporation
+Classe:                     Componentes de software
+Data e versão do driver:   07/23/2021 30.0.100.9805
+Nome do signatário:               Microsoft Windows Hardware Compatibility Publisher
+
+Nome publicado:            oem20.inf
+Provedor de pacotes de drivers:   Intel Corporation
+Classe:                     Adaptadores de vídeo
+Data e versão do driver:   07/23/2021 30.0.100.9805
+Nome do signatário:               Microsoft Windows Hardware Compatibility Publisher
+
+Nome publicado:            oem15.inf
+Provedor de pacotes de drivers:   Intel(R) Corporation
+Classe:                     Controladores de som, vídeo e jogos
+Data e versão do driver:   01/12/2023 10.29.0.8467
+Nome do signatário:               Microsoft Windows Hardware Compatibility Publisher
+
+Nome publicado:            oem25.inf
+Provedor de pacotes de drivers:   Intel(R) Corporation
+Classe:                     Controladores de som, vídeo e jogos
+Data e versão do driver:   04/16/2021 11.2.0.8
+Nome do signatário:               Microsoft Windows Hardware Compatibility Publisher
+
+Nome publicado:            oem14.inf
+Provedor de pacotes de drivers:   Intel(R) Corporation
+Classe:                     Controladores de som, vídeo e jogos
+Data e versão do driver:   01/12/2023 10.29.0.8467
+Nome do signatário:               Microsoft Windows Hardware Compatibility Publisher
+
+Nome publicado:            oem12.inf
+Provedor de pacotes de drivers:   Intel(R) Corporation
+Classe:                     Controladores de som, vídeo e jogos
+Data e versão do driver:   01/12/2023 10.29.0.8467
+Nome do signatário:               Microsoft Windows Hardware Compatibility Publisher
+
+Nome publicado:            oem13.inf
+Provedor de pacotes de drivers:   Intel(R) Corporation
+Classe:                     Controladores de som, vídeo e jogos
+Data e versão do driver:   01/12/2023 10.29.0.8467
+Nome do signatário:               Microsoft Windows Hardware Compatibility Publisher
+
+Nome publicado:            oem11.inf
+Provedor de pacotes de drivers:   Intel(R) Corporation
+Classe:                     Controladores de som, vídeo e jogos
+Data e versão do driver:   01/12/2023 10.29.0.8467
+Nome do signatário:               Microsoft Windows Hardware Compatibility Publisher
+
+Nome publicado:            oem56.inf
+Provedor de pacotes de drivers:   Intel
+Classe:                     Componentes de software
+Data e versão do driver:   02/21/2024 2316.5.1.12
+Nome do signatário:               Microsoft Windows Hardware Compatibility Publisher
+
+Nome publicado:            oem31.inf
+Provedor de pacotes de drivers:   Intel
+Classe:                     Componentes de software
+Data e versão do driver:   09/01/2021 2130.1.16.1
+Nome do signatário:               Microsoft Windows Hardware Compatibility Publisher
+
+Nome publicado:            oem29.inf
+Provedor de pacotes de drivers:   Intel
+Classe:                     Componentes de software
+Data e versão do driver:   07/22/2021 2130.1.15.0
+Nome do signatário:               Microsoft Windows Hardware Compatibility Publisher
+
+Nome publicado:            oem53.inf
+Provedor de pacotes de drivers:   Intel
+Classe:                     Componentes de software
+Data e versão do driver:   02/21/2024 2408.5.4.0
+Nome do signatário:               Microsoft Windows Hardware Compatibility Publisher
+
+Nome publicado:            oem23.inf
+Provedor de pacotes de drivers:   Intel Corporation
+Classe:                     Controladores de som, vídeo e jogos
+Data e versão do driver:   07/23/2021 30.0.100.9805
+Nome do signatário:               Microsoft Windows Hardware Compatibility Publisher
+
+Nome publicado:            oem47.inf
+Provedor de pacotes de drivers:   Intel
+Classe:                     Adaptadores de rede
+Data e versão do driver:   11/23/2022 22.190.0.4
+Nome do signatário:               Microsoft Windows Hardware Compatibility Publisher
+
+Nome publicado:            oem57.inf
+Provedor de pacotes de drivers:   Nmap Project
+Classe:                     Serviço de Rede
+Data e versão do driver:   08/21/2024 14.18.39.405
+Nome do signatário:               Microsoft Windows Hardware Compatibility Publisher
+
+Nome publicado:            oem0.inf
+Provedor de pacotes de drivers:   Microsoft
+Classe:                     Impressoras
+Data e versão do driver:   06/21/2006 10.0.22621.1
+Nome do signatário:               Microsoft Windows
+
+Nome publicado:            oem41.inf
+Provedor de pacotes de drivers:   Realtek
+Classe:                     Componentes de software
+Data e versão do driver:   03/30/2023 11.0.6000.291
+Nome do signatário:               Microsoft Windows Hardware Compatibility Publisher
+
+Nome publicado:            oem42.inf
+Provedor de pacotes de drivers:   Realtek
+Classe:                     Componentes de software
+Data e versão do driver:   03/29/2023 1.0.604.0
+Nome do signatário:               Microsoft Windows Hardware Compatibility Publisher
+
+Nome publicado:            oem43.inf
+Provedor de pacotes de drivers:   Realtek
+Classe:                     Componentes de software
+Data e versão do driver:   03/27/2023 12.137.1101.127
+Nome do signatário:               Microsoft Windows Hardware Compatibility Publisher
+
+Nome publicado:            oem45.inf
+Provedor de pacotes de drivers:   Realtek
+Classe:                     Adaptadores de rede
+Data e versão do driver:   10/22/2021 1168.3.1022.2021
+Nome do signatário:               Microsoft Windows Hardware Compatibility Publisher
+
+Nome publicado:            oem33.inf
+Provedor de pacotes de drivers:   Samsung
+Classe:                     Componentes de software
+Data e versão do driver:   06/09/2022 1.2.43.0
+Nome do signatário:               Microsoft Windows Hardware Compatibility Publisher
+
+Nome publicado:            oem30.inf
+Provedor de pacotes de drivers:   Samsung
+Classe:                     Componentes de software
+Data e versão do driver:   06/15/2023 1.2.17.2
+Nome do signatário:               Microsoft Windows Hardware Compatibility Publisher
+
+Nome publicado:            oem34.inf
+Provedor de pacotes de drivers:   Samsung Electronics Co., Ltd.
+Classe:                     Componentes de software
+Data e versão do driver:   04/09/2021 1.0.5.7
+Nome do signatário:               Microsoft Windows Hardware Compatibility Publisher
+
+Nome publicado:            oem51.inf
+Provedor de pacotes de drivers:   Oracle Corporation
+Classe:                     Adaptadores de rede
+Data e versão do driver:   05/02/2024 7.0.18.12988
+Nome do signatário:               Microsoft Windows Hardware Compatibility Publisher
+
+Nome publicado:            oem52.inf
+Provedor de pacotes de drivers:   Oracle Corporation
+Classe:                     Serviço de Rede
+Data e versão do driver:   05/02/2024 7.0.18.12988
+Nome do signatário:               Microsoft Windows Hardware Compatibility Publisher
+
+.
+[00001F84] 2024-09-26 08:26:36 <-- executeCommand
+[00001F84] 2024-09-26 08:26:36 --> getInfNamesFromPnpUtilOutput
+[00001F84] 2024-09-26 08:26:36     find: executing, strInfFileName = oem57.inf.
+[00001F84] 2024-09-26 08:26:36 <-- getInfNamesFromPnpUtilOutput
+[00001F84] 2024-09-26 08:26:36 --> executeCommand
+[00001F84] 2024-09-26 08:26:36     executeCommand: executing, strCmd = pnputil.exe -d oem57.inf.
+[00001F84] 2024-09-26 08:26:36     executeCommand: result = Utilitário PnP da Microsoft
+
+Pacote de drivers excluído com êxito.
+.
+[00001F84] 2024-09-26 08:26:36 <-- executeCommand
+[00001F84] 2024-09-26 08:26:36 <-- ClearDriverStore
+[00001F84] 2024-09-26 08:26:36     <-- _tmain: succeed, nStatus = 0.
+[00000F40] 2024-09-26 08:26:37 --> wmain
+[00000F40] 2024-09-26 08:26:37     _tmain: executing, argv[1] = -n.
+[00000F40] 2024-09-26 08:26:37     _tmain: executing, argv[2] = -check_dll.
+[00000F40] 2024-09-26 08:26:37 --> getInUseProcesses
+[00000F40] 2024-09-26 08:26:37 --> enumProcesses
+[00000F40] 2024-09-26 08:26:37 --> getNpcapPIDs
+[00000F40] 2024-09-26 08:26:37 <-- getNpcapPIDs
+[00000F40] 2024-09-26 08:26:37     enumDLLs::OpenProcess: error, errCode = 0x00000005, strProcessName = System, dwProcessID = 4.
+[00000F40] 2024-09-26 08:26:37     enumDLLs::OpenProcess: error, errCode = 0x00000005, strProcessName = Registry, dwProcessID = 80.
+[00000F40] 2024-09-26 08:26:37     enumDLLs::OpenProcess: error, errCode = 0x00000005, strProcessName = smss.exe, dwProcessID = 532.
+[00000F40] 2024-09-26 08:26:37     enumDLLs::OpenProcess: error, errCode = 0x00000005, strProcessName = csrss.exe, dwProcessID = 764.
+[00000F40] 2024-09-26 08:26:37     enumDLLs::OpenProcess: error, errCode = 0x00000005, strProcessName = wininit.exe, dwProcessID = 856.
+[00000F40] 2024-09-26 08:26:37     enumDLLs::OpenProcess: error, errCode = 0x00000005, strProcessName = csrss.exe, dwProcessID = 868.
+[00000F40] 2024-09-26 08:26:37     enumDLLs::OpenProcess: error, errCode = 0x00000005, strProcessName = services.exe, dwProcessID = 920.
+[00000F40] 2024-09-26 08:26:37     EnumProcessModulesEx: error, errCode = 0x00000005.
+[00000F40] 2024-09-26 08:26:37     enumDLLs::OpenProcess: error, errCode = 0x00000005, strProcessName = wsc_proxy.exe, dwProcessID = 2792.
+[00000F40] 2024-09-26 08:26:37     enumDLLs::OpenProcess: error, errCode = 0x00000005, strProcessName = Memory Compression, dwProcessID = 2880.
+[00000F40] 2024-09-26 08:26:37     enumDLLs::OpenProcess: error, errCode = 0x00000005, strProcessName = AvastSvc.exe, dwProcessID = 3912.
+[00000F40] 2024-09-26 08:26:37     enumDLLs::OpenProcess: error, errCode = 0x00000005, strProcessName = svchost.exe, dwProcessID = 5904.
+[00000F40] 2024-09-26 08:26:38     enumDLLs::OpenProcess: error, errCode = 0x00000005, strProcessName = SecurityHealthService.exe, dwProcessID = 10664.
+[00000F40] 2024-09-26 08:26:38     enumDLLs::OpenProcess: error, errCode = 0x00000005, strProcessName = svchost.exe, dwProcessID = 16076.
+[00000F40] 2024-09-26 08:26:38     enumDLLs::OpenProcess: error, errCode = 0x00000005, strProcessName = svchost.exe, dwProcessID = 14256.
+[00000F40] 2024-09-26 08:26:39     enumDLLs::OpenProcess: error, errCode = 0x00000005, strProcessName = svchost.exe, dwProcessID = 8580.
+[00000F40] 2024-09-26 08:26:39     enumDLLs::OpenProcess: error, errCode = 0x00000057, strProcessName = svchost.exe, dwProcessID = 4152.
+[00000F40] 2024-09-26 08:26:39 <-- enumProcesses
+[00000F40] 2024-09-26 08:26:39 <-- getInUseProcesses
+[00000F40] 2024-09-26 08:26:39     <-- _tmain: succeed, nStatus = 0.
+[00000934] 2024-09-26 08:26:52 --> wmain
+[00000934] 2024-09-26 08:26:52     _tmain: executing, argv[1] = -n.
+[00000934] 2024-09-26 08:26:52     _tmain: executing, argv[2] = -c.
+[00000934] 2024-09-26 08:26:52 --> ClearDriverStore
+[00000934] 2024-09-26 08:26:52 --> executeCommand
+[00000934] 2024-09-26 08:26:52     executeCommand: executing, strCmd = pnputil.exe -e.
+[00000934] 2024-09-26 08:26:52     executeCommand: result = Utilitário PnP da Microsoft
+
+Nome publicado:            oem44.inf
+Provedor de pacotes de drivers:   BayHubTech
+Classe:                     Controladores de armazenamento
+Data e versão do driver:   11/04/2021 2.1.101.10540
+Nome do signatário:               Microsoft Windows Hardware Compatibility Publisher
+
+Nome publicado:            oem16.inf
+Provedor de pacotes de drivers:   Intel(R) Corporation
+Classe:                     Dispositivos de sistema
+Data e versão do driver:   10/27/2022 1.0.2726.0
+Nome do signatário:               Microsoft Windows Hardware Compatibility Publisher
+
+Nome publicado:            oem7.inf
+Provedor de pacotes de drivers:   Intel
+Classe:                     Dispositivos de sistema
+Data e versão do driver:   07/23/2021 8.7.10700.22502
+Nome do signatário:               Microsoft Windows Hardware Compatibility Publisher
+
+Nome publicado:            oem27.inf
+Provedor de pacotes de drivers:   Intel
+Classe:                     Dispositivos de sistema
+Data e versão do driver:   07/23/2021 8.7.10700.22502
+Nome do signatário:               Microsoft Windows Hardware Compatibility Publisher
+
+Nome publicado:            oem49.inf
+Provedor de pacotes de drivers:   Samsung Electronics Co., Ltd.
+Classe:                     Firmware
+Data e versão do driver:   02/24/2024 0.0.21.51
+Nome do signatário:               Microsoft Windows Hardware Compatibility Publisher
+
+Nome publicado:            oem6.inf
+Provedor de pacotes de drivers:   Samsung Electronics Co., Ltd.
+Classe:                     Extensões
+Data e versão do driver:   07/26/2023 1.0.5.5
+Nome do signatário:               Microsoft Windows Hardware Compatibility Publisher
+
+Nome publicado:            oem18.inf
+Provedor de pacotes de drivers:   Intel Corporation
+Classe:                     Dispositivos de sistema
+Data e versão do driver:   11/26/2021 3.0.0.1457
+Nome do signatário:               Microsoft Windows Hardware Compatibility Publisher
+
+Nome publicado:            oem24.inf
+Provedor de pacotes de drivers:   Intel Corporation
+Classe:                     Extensões
+Data e versão do driver:   07/23/2021 30.0.100.9805
+Nome do signatário:               Microsoft Windows Hardware Compatibility Publisher
+
+Nome publicado:            oem40.inf
+Provedor de pacotes de drivers:   Realtek Semiconductor Corp.
+Classe:                     Extensões
+Data e versão do driver:   03/30/2023 6.0.9500.1
+Nome do signatário:               Microsoft Windows Hardware Compatibility Publisher
+
+Nome publicado:            oem39.inf
+Provedor de pacotes de drivers:   Realtek Semiconductor Corp.
+Classe:                     Extensões
+Data e versão do driver:   03/30/2023 6.0.9500.1
+Nome do signatário:               Microsoft Windows Hardware Compatibility Publisher
+
+Nome publicado:            oem28.inf
+Provedor de pacotes de drivers:   Intel
+Classe:                     Dispositivos de sistema
+Data e versão do driver:   05/11/2021 2120.100.0.1085
+Nome do signatário:               Microsoft Windows Hardware Compatibility Publisher
+
+Nome publicado:            oem1.inf
+Provedor de pacotes de drivers:   Intel Corporation
+Classe:                     Dispositivos de sistema
+Data e versão do driver:   07/13/2021 30.100.2129.8
+Nome do signatário:               Microsoft Windows Hardware Compatibility Publisher
+
+Nome publicado:            oem19.inf
+Provedor de pacotes de drivers:   Intel Corporation
+Classe:                     Dispositivos de sistema
+Data e versão do driver:   07/13/2021 30.100.2129.8
+Nome do signatário:               Microsoft Windows Hardware Compatibility Publisher
+
+Nome publicado:            oem26.inf
+Provedor de pacotes de drivers:   Intel Corporation
+Classe:                     Extensões
+Data e versão do driver:   07/23/2021 30.0.100.9805
+Nome do signatário:               Microsoft Windows Hardware Compatibility Publisher
+
+Nome publicado:            oem9.inf
+Provedor de pacotes de drivers:   Intel(R) Corporation
+Classe:                     Dispositivos de sistema
+Data e versão do driver:   01/12/2023 10.29.0.8467
+Nome do signatário:               Microsoft Windows Hardware Compatibility Publisher
+
+Nome publicado:            oem10.inf
+Provedor de pacotes de drivers:   Intel(R) Corporation
+Classe:                     Dispositivos de sistema
+Data e versão do driver:   01/12/2023 10.29.0.8467
+Nome do signatário:               Microsoft Windows Hardware Compatibility Publisher
+
+Nome publicado:            oem46.inf
+Provedor de pacotes de drivers:   Realtek Semiconductor Corp.
+Classe:                     Extensões
+Data e versão do driver:   07/01/2021 10.0.231.17
+Nome do signatário:               Microsoft Windows Hardware Compatibility Publisher
+
+Nome publicado:            oem17.inf
+Provedor de pacotes de drivers:   Intel(R) Corporation
+Classe:                     Dispositivos de sistema
+Data e versão do driver:   01/12/2023 10.29.0.8467
+Nome do signatário:               Microsoft Windows Hardware Compatibility Publisher
+
+Nome publicado:            oem48.inf
+Provedor de pacotes de drivers:   Intel(R) Corporation
+Classe:                     Extensões
+Data e versão do driver:   10/27/2022 1.0.2726.0
+Nome do signatário:               Microsoft Windows Hardware Compatibility Publisher
+
+Nome publicado:            oem2.inf
+Provedor de pacotes de drivers:   Samsung
+Classe:                     Dispositivos de sistema
+Data e versão do driver:   09/27/2021 1.0.0.8
+Nome do signatário:               Microsoft Windows Hardware Compatibility Publisher
+
+Nome publicado:            oem3.inf
+Provedor de pacotes de drivers:   Samsung
+Classe:                     Extensões
+Data e versão do driver:   11/11/2021 1.2.1.0
+Nome do signatário:               Microsoft Windows Hardware Compatibility Publisher
+
+Nome publicado:            oem5.inf
+Provedor de pacotes de drivers:   Samsung
+Classe:                     Extensões
+Data e versão do driver:   06/25/2020 1.2.0.0
+Nome do signatário:               Microsoft Windows Hardware Compatibility Publisher
+
+Nome publicado:            oem4.inf
+Provedor de pacotes de drivers:   Samsung Electronics Co., Ltd.
+Classe:                     Extensões
+Data e versão do driver:   11/25/2021 1.0.2.2
+Nome do signatário:               Microsoft Windows Hardware Compatibility Publisher
+
+Nome publicado:            oem8.inf
+Provedor de pacotes de drivers:   INTEL
+Classe:                     Dispositivos de sistema
+Data e versão do driver:   07/18/1968 10.1.24.6
+Nome do signatário:               Microsoft Windows Hardware Compatibility Publisher
+
+Nome publicado:            oem50.inf
+Provedor de pacotes de drivers:   Oracle Corporation
+Classe:                     Controladores USB (barramento serial universal)
+Data e versão do driver:   05/02/2024 7.0.18.12988
+Nome do signatário:               Microsoft Windows Hardware Compatibility Publisher
+
+Nome publicado:            oem21.inf
+Provedor de pacotes de drivers:   Intel Corporation
+Classe:                     Componentes de software
+Data e versão do driver:   07/23/2021 30.0.100.9805
+Nome do signatário:               Microsoft Windows Hardware Compatibility Publisher
+
+Nome publicado:            oem55.inf
+Provedor de pacotes de drivers:   Intel
+Classe:                     Componentes de software
+Data e versão do driver:   07/11/2023 1.44.2023.710
+Nome do signatário:               Microsoft Windows Hardware Compatibility Publisher
+
+Nome publicado:            oem35.inf
+Provedor de pacotes de drivers:   Intel
+Classe:                     Componentes de software
+Data e versão do driver:   01/21/2021 1.41.2021.121
+Nome do signatário:               Microsoft Windows Hardware Compatibility Publisher
+
+Nome publicado:            oem36.inf
+Provedor de pacotes de drivers:   Samsung Electronics Co., Ltd.
+Classe:                     Componentes de software
+Data e versão do driver:   12/05/2022 1.0.13.15
+Nome do signatário:               Microsoft Windows Hardware Compatibility Publisher
+
+Nome publicado:            oem38.inf
+Provedor de pacotes de drivers:   Realtek Semiconductor Corp.
+Classe:                     Controladores de som, vídeo e jogos
+Data e versão do driver:   03/30/2023 6.0.9500.1
+Nome do signatário:               Microsoft Windows Hardware Compatibility Publisher
+
+Nome publicado:            oem37.inf
+Provedor de pacotes de drivers:   Intel Corporation
+Classe:                     Bluetooth
+Data e versão do driver:   07/11/2023 22.250.0.2
+Nome do signatário:               Microsoft Windows Hardware Compatibility Publisher
+
+Nome publicado:            oem32.inf
+Provedor de pacotes de drivers:   Intel
+Classe:                     Componentes de software
+Data e versão do driver:   09/07/2021 1.63.1155.1
+Nome do signatário:               Microsoft Windows Hardware Compatibility Publisher
+
+Nome publicado:            oem54.inf
+Provedor de pacotes de drivers:   Intel
+Classe:                     Componentes de software
+Data e versão do driver:   12/06/2023 1.71.99.0
+Nome do signatário:               Microsoft Windows Hardware Compatibility Publisher
+
+Nome publicado:            oem22.inf
+Provedor de pacotes de drivers:   Intel Corporation
+Classe:                     Componentes de software
+Data e versão do driver:   07/23/2021 30.0.100.9805
+Nome do signatário:               Microsoft Windows Hardware Compatibility Publisher
+
+Nome publicado:            oem20.inf
+Provedor de pacotes de drivers:   Intel Corporation
+Classe:                     Adaptadores de vídeo
+Data e versão do driver:   07/23/2021 30.0.100.9805
+Nome do signatário:               Microsoft Windows Hardware Compatibility Publisher
+
+Nome publicado:            oem15.inf
+Provedor de pacotes de drivers:   Intel(R) Corporation
+Classe:                     Controladores de som, vídeo e jogos
+Data e versão do driver:   01/12/2023 10.29.0.8467
+Nome do signatário:               Microsoft Windows Hardware Compatibility Publisher
+
+Nome publicado:            oem25.inf
+Provedor de pacotes de drivers:   Intel(R) Corporation
+Classe:                     Controladores de som, vídeo e jogos
+Data e versão do driver:   04/16/2021 11.2.0.8
+Nome do signatário:               Microsoft Windows Hardware Compatibility Publisher
+
+Nome publicado:            oem14.inf
+Provedor de pacotes de drivers:   Intel(R) Corporation
+Classe:                     Controladores de som, vídeo e jogos
+Data e versão do driver:   01/12/2023 10.29.0.8467
+Nome do signatário:               Microsoft Windows Hardware Compatibility Publisher
+
+Nome publicado:            oem12.inf
+Provedor de pacotes de drivers:   Intel(R) Corporation
+Classe:                     Controladores de som, vídeo e jogos
+Data e versão do driver:   01/12/2023 10.29.0.8467
+Nome do signatário:               Microsoft Windows Hardware Compatibility Publisher
+
+Nome publicado:            oem13.inf
+Provedor de pacotes de drivers:   Intel(R) Corporation
+Classe:                     Controladores de som, vídeo e jogos
+Data e versão do driver:   01/12/2023 10.29.0.8467
+Nome do signatário:               Microsoft Windows Hardware Compatibility Publisher
+
+Nome publicado:            oem11.inf
+Provedor de pacotes de drivers:   Intel(R) Corporation
+Classe:                     Controladores de som, vídeo e jogos
+Data e versão do driver:   01/12/2023 10.29.0.8467
+Nome do signatário:               Microsoft Windows Hardware Compatibility Publisher
+
+Nome publicado:            oem56.inf
+Provedor de pacotes de drivers:   Intel
+Classe:                     Componentes de software
+Data e versão do driver:   02/21/2024 2316.5.1.12
+Nome do signatário:               Microsoft Windows Hardware Compatibility Publisher
+
+Nome publicado:            oem31.inf
+Provedor de pacotes de drivers:   Intel
+Classe:                     Componentes de software
+Data e versão do driver:   09/01/2021 2130.1.16.1
+Nome do signatário:               Microsoft Windows Hardware Compatibility Publisher
+
+Nome publicado:            oem29.inf
+Provedor de pacotes de drivers:   Intel
+Classe:                     Componentes de software
+Data e versão do driver:   07/22/2021 2130.1.15.0
+Nome do signatário:               Microsoft Windows Hardware Compatibility Publisher
+
+Nome publicado:            oem53.inf
+Provedor de pacotes de drivers:   Intel
+Classe:                     Componentes de software
+Data e versão do driver:   02/21/2024 2408.5.4.0
+Nome do signatário:               Microsoft Windows Hardware Compatibility Publisher
+
+Nome publicado:            oem23.inf
+Provedor de pacotes de drivers:   Intel Corporation
+Classe:                     Controladores de som, vídeo e jogos
+Data e versão do driver:   07/23/2021 30.0.100.9805
+Nome do signatário:               Microsoft Windows Hardware Compatibility Publisher
+
+Nome publicado:            oem47.inf
+Provedor de pacotes de drivers:   Intel
+Classe:                     Adaptadores de rede
+Data e versão do driver:   11/23/2022 22.190.0.4
+Nome do signatário:               Microsoft Windows Hardware Compatibility Publisher
+
+Nome publicado:            oem0.inf
+Provedor de pacotes de drivers:   Microsoft
+Classe:                     Impressoras
+Data e versão do driver:   06/21/2006 10.0.22621.1
+Nome do signatário:               Microsoft Windows
+
+Nome publicado:            oem41.inf
+Provedor de pacotes de drivers:   Realtek
+Classe:                     Componentes de software
+Data e versão do driver:   03/30/2023 11.0.6000.291
+Nome do signatário:               Microsoft Windows Hardware Compatibility Publisher
+
+Nome publicado:            oem42.inf
+Provedor de pacotes de drivers:   Realtek
+Classe:                     Componentes de software
+Data e versão do driver:   03/29/2023 1.0.604.0
+Nome do signatário:               Microsoft Windows Hardware Compatibility Publisher
+
+Nome publicado:            oem43.inf
+Provedor de pacotes de drivers:   Realtek
+Classe:                     Componentes de software
+Data e versão do driver:   03/27/2023 12.137.1101.127
+Nome do signatário:               Microsoft Windows Hardware Compatibility Publisher
+
+Nome publicado:            oem45.inf
+Provedor de pacotes de drivers:   Realtek
+Classe:                     Adaptadores de rede
+Data e versão do driver:   10/22/2021 1168.3.1022.2021
+Nome do signatário:               Microsoft Windows Hardware Compatibility Publisher
+
+Nome publicado:            oem33.inf
+Provedor de pacotes de drivers:   Samsung
+Classe:                     Componentes de software
+Data e versão do driver:   06/09/2022 1.2.43.0
+Nome do signatário:               Microsoft Windows Hardware Compatibility Publisher
+
+Nome publicado:            oem30.inf
+Provedor de pacotes de drivers:   Samsung
+Classe:                     Componentes de software
+Data e versão do driver:   06/15/2023 1.2.17.2
+Nome do signatário:               Microsoft Windows Hardware Compatibility Publisher
+
+Nome publicado:            oem34.inf
+Provedor de pacotes de drivers:   Samsung Electronics Co., Ltd.
+Classe:                     Componentes de software
+Data e versão do driver:   04/09/2021 1.0.5.7
+Nome do signatário:               Microsoft Windows Hardware Compatibility Publisher
+
+Nome publicado:            oem51.inf
+Provedor de pacotes de drivers:   Oracle Corporation
+Classe:                     Adaptadores de rede
+Data e versão do driver:   05/02/2024 7.0.18.12988
+Nome do signatário:               Microsoft Windows Hardware Compatibility Publisher
+
+Nome publicado:            oem52.inf
+Provedor de pacotes de drivers:   Oracle Corporation
+Classe:                     Serviço de Rede
+Data e versão do driver:   05/02/2024 7.0.18.12988
+Nome do signatário:               Microsoft Windows Hardware Compatibility Publisher
+
+.
+[00000934] 2024-09-26 08:26:52 <-- executeCommand
+[00000934] 2024-09-26 08:26:52 --> getInfNamesFromPnpUtilOutput
+[00000934] 2024-09-26 08:26:52 <-- getInfNamesFromPnpUtilOutput
+[00000934] 2024-09-26 08:26:52 <-- ClearDriverStore
+[00000934] 2024-09-26 08:26:52     <-- _tmain: succeed, nStatus = 0.
+[00003354] 2024-09-26 08:26:52 --> wmain
+[00003354] 2024-09-26 08:26:52     _tmain: executing, argv[1] = -n.
+[00003354] 2024-09-26 08:26:52     _tmain: executing, argv[2] = -iw.
+[00003354] 2024-09-26 08:26:52 --> InstallWFPCallout
+[00003354] 2024-09-26 08:26:52 --> GetWFPCalloutInfFilePath
+[00003354] 2024-09-26 08:26:52     lpFilename = C:\Program Files\Npcap\NPCAP_wfp.inf
+[00003354] 2024-09-26 08:26:52 <-- GetWFPCalloutInfFilePath
+[00003354] 2024-09-26 08:26:52 --> isFileExist
+[00003354] 2024-09-26 08:26:52     FindFirstFile: succeed, szFileFullPath = C:\Program Files\Npcap\NPCAP_wfp.inf.
+[00003354] 2024-09-26 08:26:52 <-- isFileExist
+[00003354] 2024-09-26 08:26:52     LaunchINFSectionEx: executing, szCmd = C:\Program Files\Npcap\NPCAP_wfp.inf,DefaultInstall,,36,N.
+[00003354] 2024-09-26 08:26:52 <-- InstallWFPCallout
+[00003354] 2024-09-26 08:26:52     <-- _tmain: succeed, nStatus = 0.
+[00002704] 2024-09-26 08:26:53 --> wmain
+[00002704] 2024-09-26 08:26:53     _tmain: executing, argv[1] = -n.
+[00002704] 2024-09-26 08:26:53     _tmain: executing, argv[2] = -i.
+[00002704] 2024-09-26 08:26:53 --> UninstallDriver
+[00002704] 2024-09-26 08:26:53 --> HrGetINetCfg
+[00002704] 2024-09-26 08:26:53 <-- HrGetINetCfg
+[00002704] 2024-09-26 08:26:53     bWiFiService = 0.
+[00002704] 2024-09-26 08:26:53     HrUninstallNetComponent: executing, szComponentId = INSECURE_NPCAP.
+[00002704] 2024-09-26 08:26:53 --> HrUninstallNetComponent
+[00002704] 2024-09-26 08:26:53     Error 0x1: Couldn't get an interface pointer to INSECURE_NPCAP.
+
+Possible cause:
+
+Função incorreta.
+
+[00002704] 2024-09-26 08:26:53 <-- HrUninstallNetComponent
+[00002704] 2024-09-26 08:26:53     Error 0x1: Couldn't uninstall the network component.
+
+Possible cause:
+
+Função incorreta.
+
+[00002704] 2024-09-26 08:26:53 --> HrReleaseINetCfg
+[00002704] 2024-09-26 08:26:53 <-- HrReleaseINetCfg
+[00002704] 2024-09-26 08:26:53 <-- UninstallDriver
+[00002704] 2024-09-26 08:26:53 --> InstallDriver
+[00002704] 2024-09-26 08:26:53 --> GetServiceInfFilePath
+[00002704] 2024-09-26 08:26:53     lpFilename = C:\Program Files\Npcap\NPCAP.inf
+[00002704] 2024-09-26 08:26:53 <-- GetServiceInfFilePath
+[00002704] 2024-09-26 08:26:53 --> InstallSpecifiedComponent
+[00002704] 2024-09-26 08:26:53 --> HrGetINetCfg
+[00002704] 2024-09-26 08:26:53 <-- HrGetINetCfg
+[00002704] 2024-09-26 08:26:53 --> HrInstallNetComponent
+[00002704] 2024-09-26 08:26:53     bWiFiService = 0.
+[00002704] 2024-09-26 08:26:53     HrInstallComponent: executing, szComponentId = INSECURE_NPCAP.
+[00002704] 2024-09-26 08:26:53 --> HrInstallComponent
+[00002704] 2024-09-26 08:26:58 <-- HrInstallComponent
+[00002704] 2024-09-26 08:26:58 <-- HrInstallNetComponent
+[00002704] 2024-09-26 08:26:58 --> HrReleaseINetCfg
+[00002704] 2024-09-26 08:26:58 <-- HrReleaseINetCfg
+[00002704] 2024-09-26 08:26:58 <-- InstallSpecifiedComponent
+[00002704] 2024-09-26 08:26:58 <-- InstallDriver
+[00002704] 2024-09-26 08:26:58     <-- _tmain: succeed, nStatus = 0.
