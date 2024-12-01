@@ -18,3 +18,9 @@ def on_disconnect():
     print('Cliente desconectado.')
 
 @socketio.on('mensagem')
+def handle_message(msg):
+    print(f'Mensagem recebida: {msg}')
+    socketio.send(f'Recebi a mensagem: {msg}')
+
+if __name__ == '__main__':
+    socketio.run(app, host='0.0.0.0', port=5000)
