@@ -1,0 +1,61 @@
+############# EXPLANATION ###########
+
+Primeiro dividimos no conceito de quem envia e se quem recebe...
+
+THE CLIENT: ###################################################
+
+- É feito atravez da biblioteca socketio: import socketio
+- Depois é instanciado um cliente: sio = socketio.Client()
+- Em seguinda é estabelecida a conexão: sio.connect('http://localhost:500')
+- Em seguinda, é possível enviar dados ao servidor: sio.emit('mensagem','Hello World!')
+|_ obs: Nesse exemplo, colocamos 'mensagem' como o tipo de mesagem a ser enviada, mas na verdade isso obviamente não define o tipo da mensagem, isso é um nome que foi definido por você no programa que receberá as mensagens, ex:
+
+... programa receptor flask ...
+@socketio.on('mensagem') #-> isso é o que define o nome, pq n sei
+def handle_message(msg):
+    print(f'Mensagem recebida: {msg}')
+    socketio.send(f'Recebi a mensagem: {msg}')
+...
+
+- Depois é possível desconectar: sio.disconnect()
+------------------------------------------------
+- Você também pode definir uma função callback, que servirá para fazer algo quando algum evento acontecer, como por exemplo (exemplo referente ao evento de se o cliente se conectar ou desconectar à algum servidor):
+
+...
+@sio.event
+def connect():
+    print('Conectado ao servidor!')
+
+# O mesmo vale para essa função
+@sio.event
+def disconnect():
+    print('Desconectado do servidor!')
+...
+
+THE SERVER: ####################################################
+
+- primeiro importa os trem: 
+from flask import Flask
+from flask_socketio import SocketIO
+
+- Depois intancia um objeto pro flask, depois define uma chave de segurança, depois instancia um objeto pro socketio:
+...
+app = Flask(__name__)
+app.config['SECRET_KEY'] = 'chave_secreta'
+socketio = SocketIO(app)
+...
+
+- Depois, como este simmula um servidor, definimos algumas funções de callback, como identificar se ta ligado, identificar se ta desligado, identificar mensagens:
+
+@socketio.on('connect')
+def on_connect():
+    print('Cliente conectado.')
+
+@socketio.on('disconnect')
+def on_disconnect():
+    print('Cliente desconectado.')
+
+@socketio.on('mensagem')
+def handle_message(msg):
+    print(f'Mensagem recebida: {msg}')
+    socketio.send(f'Recebi a mensagem: {msg}')
