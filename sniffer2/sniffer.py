@@ -9,20 +9,28 @@ from dotenv import load_dotenv
 import os
 import requests  # Biblioteca para fazer requisições HTTP em Python
 import json  # Para converter os dados em JSON
+import socketio
 
 # TESTE
 import threading
-import socketio
 
 ################################################################################################################################################
+
+#----------JUST CUSE IT NEED TO BE HERE----------#
+
 load_dotenv() # Carregando as variaveis de ambiente
 # Obtendo a URL do endpoint e o ID do usuário a partir das variáveis de ambiente
 endpoint_url = os.getenv("ENDPOINT_URL")
 # Obtém o ID do usuário
 user_id = os.getenv("ID_USER")
 sio = socketio.Client()
-sio.connect('http://localhost:4000')
+sio.connect(endpoint_url)
+
+on_or_off = True
+
 ################################################################################################################################################
+
+#----------CALL BACK----------#
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'chave_secreta'
@@ -39,8 +47,19 @@ def on_disconnect():
 @socketio.on('mensagem')
 def handle_message(msg):
     print(f'Mensagem recebida: {msg}')
+    
+    def parado_ou_n():
+        global on_or_off
+        if msg == 'stop':
+            on_or_off = False
+            print('Programa parado!')
+        elif msg == 'start':
+            on_or_off = True
+            print('Programa startado!')
 
 ################################################################################################################################################
+
+#----------PROCESSADOR DE PACOTES----------#
 
 def sniffed_packet(packet):
     data = {}
@@ -108,21 +127,32 @@ def sniffed_packet(packet):
             # Enviando a mensagem do pacote
             sio.emit('pacote', data)
             # Printando
-            print(f"Dados enviados: {data}")
+            #print(f"Dados enviados: {data}")
         except Exception as e:
             print(f"Erro ao enviar os dados: {e}")
     else:
         print("Erro: A variável ENDPOINT_URL não foi definida no arquivo .env.")
 
-    print("\n" + "-"*50 + "\n")
+    #print("\n" + "-"*50 + "\n")
+
+################################################################################################################################################
+
+#----------APENAS FAZ FUNCIONAR----------#
 
 def sniffer(interface):
+    
     '''
     - O parametro 1 indica a interface de rede que deseja monitorar, 
     - O parametro 2 indica que o programa não deve armazenar nada na memória referente a captura de pacotes,
     - O parametro 3 chama a função que irá processar os pacotes capturados.
     '''
-    scapy.sniff(iface=interface, store=False, prn=sniffed_packet)
+    global on_or_off
+    if on_or_off:
+        scapy.sniff(iface=interface, store=False, prn=sniffed_packet)
+
+################################################################################################################################################
+
+#----------MAIN É MAIN----------#
 
 def main():
 
