@@ -47,6 +47,7 @@ socketio = SocketIO(app)
 
 - Depois, como este simmula um servidor, definimos algumas funções de callback, como identificar se ta ligado, identificar se ta desligado, identificar mensagens:
 
+...
 @socketio.on('connect')
 def on_connect():
     print('Cliente conectado.')
@@ -59,3 +60,14 @@ def on_disconnect():
 def handle_message(msg):
     print(f'Mensagem recebida: {msg}')
     socketio.send(f'Recebi a mensagem: {msg}')
+...
+
+|_Obs: fds
+
+
+- E por último, obviamente, seguinto a norma padrão do flask:
+
+...
+if __name__ == '__main__':
+    socketio.run(app, host='0.0.0.0', port=5000)
+...
