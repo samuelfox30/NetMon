@@ -12,6 +12,17 @@ import json  # Para converter os dados em JSON
 
 # TESTE
 import threading
+import socketio
+
+################################################################################################################################################
+load_dotenv() # Carregando as variaveis de ambiente
+# Obtendo a URL do endpoint e o ID do usuário a partir das variáveis de ambiente
+endpoint_url = os.getenv("ENDPOINT_URL")
+# Obtém o ID do usuário
+user_id = os.getenv("ID_USER")
+sio = socketio.Client()
+sio.connect('http://localhost:4000')
+################################################################################################################################################
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'chave_secreta'
@@ -28,15 +39,6 @@ def on_disconnect():
 @socketio.on('mensagem')
 def handle_message(msg):
     print(f'Mensagem recebida: {msg}')
-    socketio.send(f'Recebi a mensagem: {msg}')
-
-################################################################################################################################################
-
-load_dotenv() # Carregando as variaveis de ambiente
-# Obtendo a URL do endpoint e o ID do usuário a partir das variáveis de ambiente
-endpoint_url = os.getenv("ENDPOINT_URL")
-# Obtém o ID do usuário
-user_id = os.getenv("ID_USER")
 
 ################################################################################################################################################
 
@@ -104,7 +106,7 @@ def sniffed_packet(packet):
     if endpoint_url:  # Verifica se a variável ENDPOINT_URL foi definida
         try:
             # Enviando a mensagem do pacote
-            socketio.send('pacote', data)
+            sio.emit('pacote', data)
             # Printando
             print(f"Dados enviados: {data}")
         except Exception as e:
