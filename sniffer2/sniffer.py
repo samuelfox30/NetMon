@@ -44,18 +44,17 @@ def on_connect():
 def on_disconnect():
     print('Cliente desconectado.')
 
-@socketio.on('mensagem')
-def handle_message(msg):
-    print(f'Mensagem recebida: {msg}')
-    
-    def parado_ou_n():
-        global on_or_off
-        if msg == 'stop':
-            on_or_off = False
-            print('Programa parado!')
-        elif msg == 'start':
-            on_or_off = True
-            print('Programa startado!')
+@socketio.on('stop')
+def handle_message(msg='nothing'):
+    global on_or_off
+    print(f'Programa parado: {msg}')
+    on_or_off = False
+
+@socketio.on('start')
+def handle_message(msg='nothing'):
+    global on_or_off
+    print(f'Programa iniciado: {msg}')
+    on_or_off = True
 
 ################################################################################################################################################
 
