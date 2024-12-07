@@ -28,6 +28,14 @@ sio.connect(endpoint_url)
 
 on_or_off = True
 
+def verification(value='none'):
+    global on_or_off
+    if value == 'none':
+        return on_or_off    
+    else:
+        on_or_off = value
+        return on_or_off
+
 ################################################################################################################################################
 
 #----------CALL BACK----------#
@@ -46,15 +54,13 @@ def on_disconnect():
 
 @socketio.on('stop')
 def handle_message(msg='nothing'):
-    global on_or_off
     print(f'Programa parado: {msg}')
-    on_or_off = False
+    verification(False)
 
 @socketio.on('start')
 def handle_message(msg='nothing'):
-    global on_or_off
     print(f'Programa iniciado: {msg}')
-    on_or_off = True
+    verification(True)
 
 ################################################################################################################################################
 
@@ -145,9 +151,8 @@ def sniffer(interface):
     - O parametro 2 indica que o programa não deve armazenar nada na memória referente a captura de pacotes,
     - O parametro 3 chama a função que irá processar os pacotes capturados.
     '''
-    global on_or_off
-    if on_or_off:
-        scapy.sniff(iface=interface, store=False, prn=sniffed_packet)
+    
+    scapy.sniff(iface=interface, store=False, prn=sniffed_packet, stop_filter=lambda x: not verification())
 
 ################################################################################################################################################
 
