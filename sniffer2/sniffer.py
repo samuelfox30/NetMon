@@ -5,7 +5,7 @@ import socketio
 
 # SNIFFER IMPORTS
 import scapy.all as scapy
-from dotenv import load_dotenv
+from dotenv import load_dotenvxxxxxx
 import os
 import requests  # Biblioteca para fazer requisições HTTP em Python
 import json  # Para converter os dados em JSON
