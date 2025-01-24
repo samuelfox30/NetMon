@@ -5,7 +5,7 @@ import socketio
 
 # SNIFFER IMPORTS
 import scapy.all as scapy
-from dotenv import load_dotenvxxxxxx
+from dotenv import load_dotenv
 import os
 import requests  # Biblioteca para fazer requisições HTTP em Python
 import json  # Para converter os dados em JSON
@@ -26,16 +26,6 @@ user_id = os.getenv("ID_USER")
 sio = socketio.Client()
 sio.connect(endpoint_url)
 
-on_or_off = True
-
-def verification(value='none'):
-    global on_or_off
-    if value == 'none':
-        return on_or_off    
-    else:
-        on_or_off = value
-        return on_or_off
-
 ################################################################################################################################################
 
 #----------CALL BACK----------#
@@ -51,16 +41,6 @@ def on_connect():
 @socketio.on('disconnect')
 def on_disconnect():
     print('Cliente desconectado.')
-
-@socketio.on('stop')
-def handle_message(msg='nothing'):
-    print(f'Programa parado: {msg}')
-    verification(False)
-
-@socketio.on('start')
-def handle_message(msg='nothing'):
-    print(f'Programa iniciado: {msg}')
-    verification(True)
 
 ################################################################################################################################################
 
@@ -152,7 +132,7 @@ def sniffer(interface):
     - O parametro 3 chama a função que irá processar os pacotes capturados.
     '''
     
-    scapy.sniff(iface=interface, store=False, prn=sniffed_packet, stop_filter=lambda x: not verification())
+    scapy.sniff(iface=interface, store=False, prn=sniffed_packet)
 
 ################################################################################################################################################
 
